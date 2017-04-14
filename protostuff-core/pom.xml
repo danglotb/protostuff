@@ -1,26 +1,45 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <artifactId>protostuff</artifactId>
-    <groupId>io.protostuff</groupId>
-    <version>1.5.4-SNAPSHOT</version>
-  </parent>
-  <modelVersion>4.0.0</modelVersion>
-  <artifactId>protostuff-core</artifactId>
-  <name>protostuff :: core</name>
-  <description>protobuf serialization for mutable messages</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>protostuff</artifactId>
+        <groupId>io.protostuff</groupId>
+        <version>1.5.4-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>protostuff-core</artifactId>
+    <name>protostuff :: core</name>
+    <description>protobuf serialization for mutable messages</description>
 
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--<dependency>
+      <groupId>org.evosuite</groupId>
+      <artifactId>evosuite</artifactId>
+      <version>1.0.5-SNAPSHOT</version>
     </dependency>
-    <dependency>
-      <groupId>io.protostuff</groupId>
-      <artifactId>protostuff-api</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-  </dependencies>
+            -->
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-master</artifactId>
+            <version>1.0.5-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-runtime</artifactId>
+            <version>1.0.5-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
